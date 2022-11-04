@@ -4,12 +4,64 @@ var mm = 0;
 var ss = 0;
 var tempo = 1000;
 var cron;
-const play = document.getElementById('play')
-play.addEventListener("click", function () {
+const quarenta = document.getElementById('40')
+quarenta.addEventListener("click", function () {
     var meuInterval = setInterval(() => {
         const audio = document.querySelector('audio')
         audio.play()
-    }, 1500000)
+    }, 2400000) // 40 minutos aqui
+    const pause = document.getElementById('pause')
+    pause.addEventListener("click", function () {
+        clearInterval(meuInterval);
+    })
+    const stop = document.getElementById('stop')
+    stop.addEventListener("click", function () {
+        clearInterval(meuInterval);
+    })
+});
+const vinte 
+
+
+
+
+
+
+= document.getElementById('20')
+vinte.addEventListener("click", function () {
+    var meuInterval = setInterval(() => {
+        const audio = document.querySelector('audio')
+        audio.play()
+    }, 1500000) // 25 minutos aqui
+    const pause = document.getElementById('pause')
+    pause.addEventListener("click", function () {
+        clearInterval(meuInterval);
+    })
+    const stop = document.getElementById('stop')
+    stop.addEventListener("click", function () {
+        clearInterval(meuInterval);
+    })
+});
+const sete = document.getElementById('7')
+sete.addEventListener("click", function () {
+    var meuInterval = setInterval(() => {
+        const audio = document.querySelector('audio')
+        audio.play()
+    }, 420000) // 25 minutos aqui
+    const pause = document.getElementById('pause')
+    pause.addEventListener("click", function () {
+        clearInterval(meuInterval);
+    })
+    const stop = document.getElementById('stop')
+    stop.addEventListener("click", function () {
+        clearInterval(meuInterval);
+    })
+});
+const cinco = document.getElementById('5')
+cinco.addEventListener("click", function () {
+    var meuInterval = setInterval(() => {
+        const audio = document.querySelector('audio')
+        audio.play()
+    }, 300000) // 25 minutos aqui
     const pause = document.getElementById('pause')
     pause.addEventListener("click", function () {
         clearInterval(meuInterval);

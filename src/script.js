@@ -11,13 +11,13 @@ play.addEventListener("click", function () {
         audio.play()
     }, 1500000)
     const pause = document.getElementById('pause')
-    pause.addEventListener("click", function () {  
-        clearInterval(meuInterval);        
-    })   
-    const stop = document.getElementById('stop')
-    stop.addEventListener("click", function () {  
+    pause.addEventListener("click", function () {
         clearInterval(meuInterval);
-    })    
+    })
+    const stop = document.getElementById('stop')
+    stop.addEventListener("click", function () {
+        clearInterval(meuInterval);
+    })
 });
 function start() {
     cron = setInterval(timer, tempo);
@@ -32,15 +32,15 @@ function stop() {
 }
 function timer() {
     ss++;
-    if (ss ==60) {
-        ss= 0;
+    if (ss == 60) {
+        ss = 0;
         mm++;
         if (mm == 60) {
-            mm= 0;
+            mm = 0;
             hh++;
             if (hh == 12) {
-                hh= 0; 
-                ss++;
+                hh = 0;
+                // ss++;
             }
         }
     }

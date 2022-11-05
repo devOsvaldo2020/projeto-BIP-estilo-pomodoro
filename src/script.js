@@ -19,14 +19,7 @@ quarenta.addEventListener("click", function () {
         clearInterval(meuInterval);
     })
 });
-const vinte 
-
-
-
-
-
-
-= document.getElementById('20')
+const vinte = document.getElementById('20')
 vinte.addEventListener("click", function () {
     var meuInterval = setInterval(() => {
         const audio = document.querySelector('audio')

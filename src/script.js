@@ -9,7 +9,7 @@ quarenta.addEventListener("click", function () {
     var meuInterval = setInterval(() => {
         const audio = document.querySelector('audio')
         audio.play()
-    }, 2400000) // 40 minutos aqui
+    }, 2400000);
     const pause = document.getElementById('pause')
     pause.addEventListener("click", function () {
         clearInterval(meuInterval);
@@ -24,7 +24,7 @@ vinte.addEventListener("click", function () {
     var meuInterval = setInterval(() => {
         const audio = document.querySelector('audio')
         audio.play()
-    }, 1500000) // 25 minutos aqui
+    }, 1500000);
     const pause = document.getElementById('pause')
     pause.addEventListener("click", function () {
         clearInterval(meuInterval);
@@ -39,7 +39,7 @@ sete.addEventListener("click", function () {
     var meuInterval = setInterval(() => {
         const audio = document.querySelector('audio')
         audio.play()
-    }, 420000) // 25 minutos aqui
+    }, 420000);
     const pause = document.getElementById('pause')
     pause.addEventListener("click", function () {
         clearInterval(meuInterval);
@@ -54,7 +54,7 @@ cinco.addEventListener("click", function () {
     var meuInterval = setInterval(() => {
         const audio = document.querySelector('audio')
         audio.play()
-    }, 300000) // 25 minutos aqui
+    }, 300000);
     const pause = document.getElementById('pause')
     pause.addEventListener("click", function () {
         clearInterval(meuInterval);
@@ -90,7 +90,7 @@ function timer() {
         }
     }
     var format = (hh < 10 ? '0' + hh : hh) + ':' + (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0' + ss : ss);
-    document.getElementById('counter').innerText = format
+    document.getElementById('counter').innerText = format;
 }
 
 

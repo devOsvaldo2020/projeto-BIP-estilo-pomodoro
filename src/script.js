@@ -1,60 +1,41 @@
 "use strict"
-var hh = 0;
-var mm = 0;
-var ss = 0;
-var tempo = 1000;
-var cron;
+let hh = 0;
+let mm = 0;
+let ss = 0;
+let tempo = 1000;
+let cron;
+
+// logica do pomodoro
 const quarenta = document.getElementById('40')
-quarenta.addEventListener("click", function () {
-    var meuInterval = setInterval(() => {
-        const audio = document.querySelector('audio')
-        audio.play()
-    }, 2400000);
-    const pause = document.getElementById('pause')
-    pause.addEventListener("click", function () {
-        clearInterval(meuInterval);
-    })
-    const stop = document.getElementById('stop')
-    stop.addEventListener("click", function () {
-        clearInterval(meuInterval);
-    })
-});
 const vinte = document.getElementById('20')
-vinte.addEventListener("click", function () {
-    var meuInterval = setInterval(() => {
-        const audio = document.querySelector('audio')
-        audio.play()
-    }, 1500000);
-    const pause = document.getElementById('pause')
-    pause.addEventListener("click", function () {
-        clearInterval(meuInterval);
-    })
-    const stop = document.getElementById('stop')
-    stop.addEventListener("click", function () {
-        clearInterval(meuInterval);
-    })
-});
 const sete = document.getElementById('7')
-sete.addEventListener("click", function () {
-    var meuInterval = setInterval(() => {
-        const audio = document.querySelector('audio')
-        audio.play()
-    }, 420000);
-    const pause = document.getElementById('pause')
-    pause.addEventListener("click", function () {
-        clearInterval(meuInterval);
-    })
-    const stop = document.getElementById('stop')
-    stop.addEventListener("click", function () {
-        clearInterval(meuInterval);
-    })
-});
 const cinco = document.getElementById('5')
-cinco.addEventListener("click", function () {
-    var meuInterval = setInterval(() => {
+
+const quarentaMinuto = 2400000;
+const vinteMinuto = 1200000;
+const seteMinuto = 420000;
+const cincoMinuto = 300000;
+
+quarenta.addEventListener("click", function () {
+    let meuInterval = setTimeout(() => {
         const audio = document.querySelector('audio')
         audio.play()
-    }, 300000);
+    }, quarentaMinuto);
+    const pause = document.getElementById('pause')
+    pause.addEventListener("click", function () {
+        clearInterval(meuInterval);
+    })    
+    const stop = document.getElementById('stop')
+    stop.addEventListener("click", function () {
+        clearInterval(meuInterval);
+    })    
+});
+
+vinte.addEventListener("click", function () {
+    let meuInterval = setInterval(() => {
+        const audio = document.querySelector('audio')
+        audio.play()
+    }, vinteMinuto);
     const pause = document.getElementById('pause')
     pause.addEventListener("click", function () {
         clearInterval(meuInterval);
@@ -64,6 +45,38 @@ cinco.addEventListener("click", function () {
         clearInterval(meuInterval);
     })
 });
+
+sete.addEventListener("click", function () {
+    let meuInterval = setInterval(() => {
+        const audio = document.querySelector('audio')
+        audio.play()
+    }, seteMinuto);
+    const pause = document.getElementById('pause')
+    pause.addEventListener("click", function () {
+        clearInterval(meuInterval);
+    })
+    const stop = document.getElementById('stop')
+    stop.addEventListener("click", function () {
+        clearInterval(meuInterval);
+    })
+});
+
+cinco.addEventListener("click", function () {
+    let meuInterval = setInterval(() => {
+        const audio = document.querySelector('audio')
+        audio.play()
+    }, cincoMinuto);
+    const pause = document.getElementById('pause')
+    pause.addEventListener("click", function () {
+        clearInterval(meuInterval);
+    })
+    const stop = document.getElementById('stop')
+    stop.addEventListener("click", function () {
+        clearInterval(meuInterval);
+    })
+});
+
+// logica do cronometro
 function start() {
     cron = setInterval(timer, tempo);
 }

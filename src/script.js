@@ -1,9 +1,9 @@
 "use strict"
-var hh = 0;
-var mm = 0;
-var ss = 0;
-var tempo = 1000;
-var cron;
+let hh = 0;
+let mm = 0;
+let ss = 0;
+let tempo = 1000;
+let cron;
 
 
 const quarenta = document.getElementById('40')

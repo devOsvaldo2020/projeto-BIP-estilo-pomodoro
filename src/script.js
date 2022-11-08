@@ -4,6 +4,7 @@ var mm = 0;
 var ss = 0;
 var tempo = 1000;
 var cron;
+// pomodoro
 const quarenta = document.getElementById('40')
 quarenta.addEventListener("click", function () {
     var meuInterval = setInterval(() => {
@@ -64,6 +65,7 @@ cinco.addEventListener("click", function () {
         clearInterval(meuInterval);
     })
 });
+// cronometro
 function start() {
     cron = setInterval(timer, tempo);
 }

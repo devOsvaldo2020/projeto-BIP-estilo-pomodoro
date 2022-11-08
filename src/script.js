@@ -1,11 +1,11 @@
 "use strict"
-let hh = 0;
-let mm = 0;
-let ss = 0;
-let tempo = 1000;
-let cron;
+var hh = 0;
+var mm = 0;
+var ss = 0;
+var tempo = 1000;
+var cron;
 
-// logica do pomodoro
+
 const quarenta = document.getElementById('40')
 const vinte = document.getElementById('20')
 const sete = document.getElementById('7')
@@ -75,8 +75,6 @@ cinco.addEventListener("click", function () {
         clearInterval(meuInterval);
     })
 });
-
-// logica do cronometro
 function start() {
     cron = setInterval(timer, tempo);
 }
